@@ -1,0 +1,13 @@
+<Nav::Header />
+
+<div class="w-100 d-none d-lg-block">
+  <Upstream::Player @id="home-video" @loop={{true}} @controls={{false}} @autoplay={{true}} @streamingURL="/assets/img/spinnV2-preorder-opacity.webm" />
+</div>
+
+<div class="w-100 d-block d-lg-none position-relative vh-100 overflow-hidden">
+  <div style="width:1400px" class="position-absolute end-0 top-0">
+    <Upstream::Player @id="mobile-home-video" @loop={{true}} @controls={{false}} @autoplay={{true}} @streamingURL="/assets/img/spinnV2-preorder-opacity.webm" />
+  </div>
+</div>
+
+{{outlet}}
